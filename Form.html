@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styled Select Option Field</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<div class="general">
+    <div class="rectangle">
+    <div class="Header">
+        <p>Styled Select Option<br>Field in Form</p>
+    </div><hr>
+    <div class="Form">
+        <label for="Name">Name:</label>
+        <br>
+        <input type="text" class="resizedTextbox" id="Name" required>
+        <br><br>
+        <label for="Email">Email:</label>
+        <br>
+        <input type="email" class="resizedTextbox" id="Email" required>
+        <br><br>
+        <label for="Age">Age:</label>
+        <br>
+        <select
+                name="Age"
+                class="resizedTextbox"
+                id="Age"
+                onfocus="this.size=6;"
+                onchange="this.size=1;"
+        >
+            <option value="Choose">-- Choose Age From Here --</option>
+            <option value="<18">Below 18 years</option>
+            <option value="18-25">Between 18-25 years</option>
+            <option value="25-40">Between 25-40 years</option>
+            <option value="40-60">Between 40-60 years</option>
+            <option value="60+">Above 60 years</option>
+        </select><br><br>
+        <input type="Submit" class="Submit" value="Submit">
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
